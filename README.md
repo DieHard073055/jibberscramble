@@ -82,6 +82,19 @@ pip install pytest
 python -m pytest tests/
 ```
 
+## GPG key generation
+
+```bash
+# generate the key
+gpg --full-generate-key
+
+# export the public key
+gpg --export --armor your-email@example.com > public_key.asc
+
+# export the private key
+gpg --export-secret-keys --armor your-email@example.com > private_key.asc
+```
+
 ## License
 
 MIT License
